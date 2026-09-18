@@ -205,7 +205,7 @@ body{
     .secundaria{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 30%;
+        margin-top: 20%;
     }
 
     .dispositivos{
