@@ -193,6 +193,7 @@ body{
         height: 60vh;
         grid-template-columns: none;
         text-align: center;
+        margin: 0 1em;
     }
 
     .container{
