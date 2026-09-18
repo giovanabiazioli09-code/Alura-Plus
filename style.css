@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+:root{
+
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-terciario: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    --fonte-principal: "Inter" , sans-serif;
+    --botao--azul--efeito: #3c92fa;
+}
+
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.apresentacao{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    background-image: url("assets/Background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+}
+
+.apresentacao__titulo{
+    font-weight: 700;
+    font-size: 28px ;
+}
+
+
+.botao__primario{
+    text-decoration: none;
+    color: var(--branco-principal);
+    background-color: var(--azul-terciario);
+    padding: 1em;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao__primario:hover{
+    background-color: var(--botao--azul--efeito);
+    color: var(--cor-de-fundo);
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: block;
+    color: var(--branco-principalmargin-bottom);
+}
+
+.apresentacao__aviso{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.apresentacao__imagem{
+    margin: 1em 0 2em 0
+}
+
+.apresentacao__caixa{
+    margin: 0 6em;
+}
+
+.secundaria__imagem{
+    width: auto;
+}
+
+.secundaria{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundaria__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.secundaria__paragrafo{
+    color: var(--cinza-secundario);
+}
+
+.secundaria__descricao{
+    padding: 2em;
+}
+
+.botao__primeiro{
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    color: var(--branco-principal);
+    background-color: var(--azul-terciario);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.botao__primeiro:hover{
+    background-color: var(--botao--azul--efeito);
+    color:var(--cor-de-fundo);
+}
+
+.dispositivos{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    margin-top: 2em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    margin: 2em;
+}
+
+.rodape__logo{
+   padding: 1em;
+   padding-top: 5em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1em;
+    padding: 1em;
+}
+
+.lista__link{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista__link:hover{
+    color: var(--azul-terciario);
+}
+
+.lista__link:active{
+    color: rgb(85, 85, 175);
+}
+
+.rodape__texto{
+    padding: 1em;
+    font-size: 14px;
+}
+
+@media (max-width:1200px) {
+    
+    .apresentacao{
+        display: flex;
+        height: 60vh;
+        grid-template-columns: none;
+        text-align: center;
+    }
+
+    .container{
+        padding-top: 35em;
+        align-items: flex-end;
+        background-size: inherit;
+        background-position: right;
+    }
+
+    .secundaria{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20em 0 ;
+    }
+
+    .secundaria__descricao{
+        padding: 10%;
+    }
+
+    .dispositivos{
+        margin-top: 20em;
+    }
+
+    .dispositivos__titulo{
+        margin: 0 1em;
+    
+    }
+
+    .dispositivos__lista{
+        display: flex;
+        flex-direction: column;
+    
+}
+
+}
+
+@media (max-width:700px) {
+    .rodape__lista{
+        display: flex;
+        flex-direction: column;
+    }
+}
